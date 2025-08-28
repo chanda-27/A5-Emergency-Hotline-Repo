@@ -75,8 +75,10 @@
     <main class="bg-[#f5fff6]">
       <!-- This is card section -->
       <section class="w-11/12 mx-auto grid grid-cols-12 gap-4">
-        <div class="cards-container grid col-span-9 my-10 w-full">
-          <div class="cards-body grid grid-cols-3 gap-4">
+        <div
+          class="cards-container grid col-span-12 lg:col-span-9 my-10 w-full"
+        >
+          <div class="cards-body grid grid-cols-1 lg:grid-cols-3 gap-4">
             <!-- card number one -->
             <div class="card shadow-lg bg-[#ffffff] p-4 rounded-lg">
               <div class="card-logo flex justify-between items-center mb-2">
@@ -379,7 +381,7 @@
         </div>
         <!-- side-bar card part -->
         <aside
-          class="sideber-part shadow bg-[#ffffff] grid col-span-3 rounded-lg my-10"
+          class="sideber-part shadow bg-[#ffffff] grid col-span-12 lg:col-span-3 rounded-lg my-10"
         >
           <div class="p-2">
             <div class="flex justify-between">
@@ -390,62 +392,17 @@
               <div class="btn-part">
                 <button
                   class="clear-btn bg-[#00A63E] font-bold text-[#ffffff] py-2 px-6 rounded-full"
+                  id="clear-history"
                 >
                   Clear
                 </button>
               </div>
             </div>
-            <div
-              class="call-history bg-gray-200 p-2 flex justify-between my-4 rounded-lg"
-            >
-              <div class="text-part">
-                <h4 class="font-semibold">Emergency Number</h4>
-                <p class="font-semibold">999</p>
-              </div>
-              <div class="time-part">
-                <span class="font-semibold">10:54:24</span>
-                <span class="font-semibold">AM</span>
-              </div>
-            </div>
-            <div
-              class="call-history bg-gray-200 p-2 flex justify-between my-4 rounded-lg"
-            >
-              <div class="text-part">
-                <h4 class="font-semibold">Fire Service Number</h4>
-                <p class="font-semibold">999</p>
-              </div>
-              <div class="time-part">
-                <span class="font-semibold">10:54:24</span>
-                <span class="font-semibold">AM</span>
-              </div>
-            </div>
-            <div
-              class="call-history bg-gray-200 p-2 flex justify-between my-4 rounded-lg"
-            >
-              <div class="text-part">
-                <h4 class="font-semibold">Railway Sevice</h4>
-                <p class="font-semibold">999</p>
-              </div>
-              <div class="time-part">
-                <span class="font-semibold">10:54:24</span>
-                <span class="font-semibold">AM</span>
-              </div>
-            </div>
-            <div
-              class="call-history bg-gray-200 p-2 flex justify-between my-4 rounded-lg"
-            >
-              <div class="text-part">
-                <h4 class="font-semibold">Brac Helpline</h4>
-                <p class="font-semibold">999</p>
-              </div>
-              <div class="time-part">
-                <span class="font-semibold">10:54:24</span>
-                <span class="font-semibold">AM</span>
-              </div>
-            </div>
+            <div id="history-container"></div>
           </div>
         </aside>
       </section>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
